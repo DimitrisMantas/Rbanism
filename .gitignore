@@ -1,0 +1,8 @@
+.DS_Store
+.Rprofile
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/.quarto/
+.httr-oauth

@@ -1,0 +1,98 @@
+---
+listing:
+  - id: actions
+    contents: listings/index/actions
+    fields: [title, image]
+    sort: "date asc"
+    type: grid
+    max-items: 3
+    image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
+    grid-item-align: center
+
+  - id: benefits
+    contents: listings/index/benefits
+    fields: [title, description, image]
+    sort: "date asc"
+    type: grid
+    max-items: 3
+    image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
+    max-description-length: 99999
+
+  - id: events
+    contents: listings/events/posts
+    fields: [title, subtitle, description, image]
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    image-height: 100%
+    grid-item-border: false
+
+  - id: partners
+    contents: listings/index/partners
+    fields: [image]
+    sort: "date asc"
+    type: grid
+    max-items: 3
+    image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
+    grid-item-align: center
+---
+
+::: {layout-ncol=2}
+{{< include resources/text/index/header.qmd >}}
+
+![](assets/imgs/index/header.jpg)
+:::
+
+{{< include utils/index/_index_header_utils.qmd >}}
+
+
+<!-- NOTE: Do not change the title of this this header! -->
+## actions
+::: {.column-screen}
+:::
+
+::: {#actions}
+:::
+
+
+## we want to build digital competence and skills for:
+
+{{< include utils/index/_index_benefit_utils.qmd >}}
+
+::: {#benefits}
+:::
+
+<!-- <div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div> -->
+
+
+## Community Gatherings
+
+::: {.column-screen}
+:::
+
+{{< include resources/text/index/events.qmd >}}
+
+::: {#events}
+:::
+
+
+## Join the Rbanism Community!
+
+{{< include resources/text/index/registration.qmd >}}
+
+
+#### Partners
+
+::: {.column-screen}
+:::
+
+{{< include resources/text/index/partners.qmd >}}
+
+::: {#partners}
+:::

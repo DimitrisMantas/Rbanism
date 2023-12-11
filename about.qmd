@@ -1,0 +1,60 @@
+---
+title: About
+subtitle: Discover how we get started, what are our principles and aims.
+title-block-style: default
+title-block-banner: assets/imgs/about/header.jpg
+
+listing:
+  id: team
+  contents: listings/about/team
+  fields: [title, subtitle, description, image]
+  sort: "date asc"
+  type: grid
+  max-items: 4
+  image-height: 128px
+  grid-item-border: false
+  max-description-length: 99999
+---
+
+## How we get started
+
+{{< include resources/text/about/header.qmd >}}
+
+
+## Principles and goals
+
+{{< include resources/text/about/vision.qmd >}}
+
+
+## Why reproducibility, automation and scalability?
+
+{{< include resources/text/about/pillars.qmd >}}
+
+
+## Members
+
+{{< include resources/text/about/members.qmd >}}
+
+
+## Core Members
+
+:::{#team}
+:::
+
+
+## Visual Identity
+
+::: {layout-ncol=2}
+{{< include resources/text/about/vi.qmd >}}
+  
+<div>
+<a class="empty-button">DONWLOAD</a>
+<a class="empty-button">DISCOVER MORE</a>
+</div>
+:::
+
+::: {layout-ncol=2}
+![](assets/imgs/about/vi_l.jpg)
+
+![](assets/imgs/about/vi_r.jpg)
+:::
